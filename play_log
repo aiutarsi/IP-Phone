@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ "$1" = "input" ]; then
+    play -t raw -b 16 -c 1 -e s -r 48000 client_input_log.raw
+elif [ "$1" = "output" ]; then
+    play -t raw -b 16 -c 1 -e s -r 48000 client_output_log.raw
+else
+    echo "Type input or output"
+fi
