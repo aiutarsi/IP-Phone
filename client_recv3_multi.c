@@ -13,7 +13,7 @@
 #include <string.h>
 #include <pthread.h>
 
-//マルチスレッド使用version
+//multi thread version
 
 #define N 512
 #define NUM_THREAD 2

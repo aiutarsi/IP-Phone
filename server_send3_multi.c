@@ -168,8 +168,8 @@ int main(int argc, char *argv[]) {
         exit(1);
     }
     
-   int fd_input = open("server_input_log.raw", O_WRONLY | O_CREAT | O_TRUNC, 0644);
-   int fd_output = open("server_output_log.raw", O_WRONLY | O_CREAT | O_TRUNC, 0644);
+    int fd_input = open("server_input_log.raw", O_WRONLY | O_CREAT | O_TRUNC, 0644);
+    int fd_output = open("server_output_log.raw", O_WRONLY | O_CREAT | O_TRUNC, 0644);
 
     //Read data from stdin and Write data to socket s
     short send_data[N];
@@ -208,9 +208,9 @@ int main(int argc, char *argv[]) {
         exit(1);
     }
 
-   close(fd_input);
-   close(fd_output);
-   pclose(gid);
-   close(ss);
-   fclose(fp);
+    close(fd_input);
+    close(fd_output);
+    pclose(gid);
+    close(ss);
+    fclose(fp);
 }
