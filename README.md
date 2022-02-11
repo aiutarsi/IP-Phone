@@ -31,13 +31,13 @@ After that, change directory to the downloaded directory.
 * Server Side
 
 ```
-$ gcc serv_send3_multi.c -o serv_send3_multi
+$ gcc -o serv_send3_multi serv_send3_multi.c -pthread
 ```
 
 * Client Side
 
 ```
-$ gcc client_recv3_multi.c -o client_recv3_multi
+$ gcc -o client_recv3_multi client_recv3_multi.c -pthread
 ```
 
 ### Searching for your IP address(IPv4)
@@ -110,17 +110,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 ```
-
-クライアント側
-
-```
-./client_exe サーバー側のIPv4 ポート番号
-```
-
-サーバ側
-
-```
-./server_exe ポート番号
-```
-
-
